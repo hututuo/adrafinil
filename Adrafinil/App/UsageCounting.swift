@@ -158,25 +158,13 @@ actor ActiveCount {
     private var failedAt: Date?
     private static let retryAfter: TimeInterval = 3_600
 
-    private struct Response: Decodable {
-        var app: String
-        var day: String
-        var active: Int
-    }
-
+    /// Yesterday's count from the service's public summary, kept for the process once it has
+    /// arrived; a failed ask is tried again after an hour.
     func value() async -> Int? {
         if let cached { return cached }
         if let failedAt, Date().timeIntervalSince(failedAt) < Self.retryAfter { return nil }
-        let url = UsageCounting.baseURL.appending(path: "v1/\(UsageCounting.app)/active")
-        let configuration = URLSessionConfiguration.ephemeral
-        configuration.timeoutIntervalForRequest = 10
-        configuration.timeoutIntervalForResource = 10
-        let session = URLSession(configuration: configuration)
-        defer { session.finishTasksAndInvalidate() }
         do {
-            let (data, response) = try await session.data(from: url)
-            guard (response as? HTTPURLResponse)?.statusCode == 200 else { throw URLError(.badServerResponse) }
-            let count = try JSONDecoder().decode(Response.self, from: data).active
+            let count = try await UsageCounting.client.activeCount().active
             cached = count
             return count
         } catch {
@@ -196,8 +184,7 @@ actor ActiveCount {
 /// of the image that crashed, and each build's images have their own.
 nonisolated enum OwnCrashReports {
     /// The app, the user daemon inside it, and the privileged helper. The helper runs as root,
-    /// so macOS writes its reports under `/Library/Logs`, where ``DiagnosticReports`` does not
-    /// look; its name is here for the day it does.
+    /// so macOS writes its reports under `/Library/Logs/DiagnosticReports`.
     static let processNames = ["Adrafinil", "AdrafinilDaemon", "AdrafinilHelper"]
 
     /// `bug_type` of a crash. A hang or a spin is written under other types.
