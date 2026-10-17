@@ -22,7 +22,7 @@ cd AdrafinilShared && swift test
 
 ## Style
 
-SwiftFormat, checked in CI (`swiftformat --lint .`). Enable the pre-commit hook once so staged Swift is formatted for you:
+SwiftFormat 0.63.1, checked in CI (`swiftformat --lint .`); CI pins that version, so a newer local one can disagree. Enable the pre-commit hook once so staged Swift is formatted for you:
 
 ```sh
 git config core.hooksPath .githooks
