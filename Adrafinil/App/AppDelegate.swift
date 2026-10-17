@@ -64,6 +64,9 @@ final class AppDelegate: NSObject, NSApplicationDelegate, UNUserNotificationCent
             object: nil,
         )
 
+        // Counts this launch at the tier the person chose; off until they have chosen.
+        UsageCounting.start()
+
         #if DEBUG
             // Daemon-free UI gallery: launch with `-ADRAFINIL_GALLERY 1` to review every surface/state.
             if UserDefaults.standard.bool(forKey: "ADRAFINIL_GALLERY") {

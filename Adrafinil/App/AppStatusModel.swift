@@ -358,6 +358,7 @@ final class AppStatusModel {
         }
         self.status = status
         lastError = nil
+        AgentKindsSeen.note(status.assertions)
         // Live data means the daemon is reachable: clear any unreachable/repair state and re-arm the
         // alert and auto-repair so a future outage is handled afresh.
         serviceState = .ok

@@ -231,6 +231,7 @@
 				0B11485B2FC6A68C00D7D25C /* AdrafinilShared */,
 				7A0000000000000000000002 /* TiptoeGitHub */,
 				7B0000000000000000000002 /* Propofol */,
+				7C0000000000000000000002 /* Digoxin */,
 			);
 			productName = Adrafinil;
 			productReference = 0B1147BA2FC6A14B00D7D25C /* Adrafinil.app */;
@@ -337,6 +338,7 @@
 				0B11485A2FC6A68C00D7D25C /* XCLocalSwiftPackageReference "AdrafinilShared" */,
 				7A0000000000000000000001 /* XCRemoteSwiftPackageReference "Tiptoe" */,
 				7B0000000000000000000001 /* XCRemoteSwiftPackageReference "propofol" */,
+				7C0000000000000000000001 /* XCRemoteSwiftPackageReference "digoxin" */,
 			);
 			preferredProjectObjectVersion = 100;
 			productRefGroup = 0B1147BB2FC6A14B00D7D25C /* Products */;
@@ -843,6 +845,14 @@
 				GitHubSupport,
 			);
 		};
+		7C0000000000000000000001 /* XCRemoteSwiftPackageReference "digoxin" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kageroumado/digoxin.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -874,6 +884,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0B11485A2FC6A68C00D7D25C /* XCLocalSwiftPackageReference "AdrafinilShared" */;
 			productName = AdrafinilShared;
+		};
+		7C0000000000000000000002 /* Digoxin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7C0000000000000000000001 /* XCRemoteSwiftPackageReference "digoxin" */;
+			productName = Digoxin;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
