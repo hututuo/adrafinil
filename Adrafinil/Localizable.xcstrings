@@ -3,6 +3,12 @@
   "strings" : {
     "%@ [Releases page.](https://github.com/kageroumado/adrafinil/releases)" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@[リリースページを開く。](https://github.com/kageroumado/adrafinil/releases)"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -13,6 +19,12 @@
     },
     "%@ may not be tracked" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ は追跡されていない可能性があります"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -23,6 +35,12 @@
     },
     "%@'s Adrafinil hook isn't in the form Adrafinil expects — likely edited by hand or left over from an update — so it may not notice when %@ is working and keep your Mac awake. Reconnect restores it without touching your other %@ settings." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ の Adrafinil フックが Adrafinil の想定する形式と異なります。手動で編集されたか、アップデート後に残ったものと思われます。そのため %2$@ の作業中であることを検知できず、Mac のスリープを抑止できない可能性があります。「再接続」を選ぶと、他の %3$@ の設定には触れずに修復します。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -33,6 +51,12 @@
     },
     "%@'s settings file couldn't be read (it may contain comments or a syntax error). Adrafinil won't modify it in this state — fix the file, then try connecting again." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ の設定ファイルを読み込めませんでした（コメントや構文エラーが含まれている可能性があります）。この状態では Adrafinil はファイルを変更しません。ファイルを修正してから、もう一度接続してください。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -44,6 +68,12 @@
     "%@." : {
       "comment" : "Ends the agent tally as a sentence",
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -72,6 +102,12 @@
             }
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld 個のエージェントが完了"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -82,6 +118,12 @@
     },
     "%lld agents may not be tracked" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld 個のエージェントが追跡されていない可能性があります"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -108,6 +150,12 @@
                 }
               }
             }
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld 個のエージェントが作業中"
           }
         },
         "zh-Hans" : {
@@ -138,6 +186,12 @@
             }
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld 件のスリープ抑止"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -148,6 +202,12 @@
     },
     "%lld still working" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld 個が作業中"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -158,6 +218,12 @@
     },
     "%lld waiting on you" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld 個が応答待ち"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -169,6 +235,12 @@
     "<1m" : {
       "comment" : "Less than one minute left",
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 分未満"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -179,6 +251,12 @@
     },
     "A background helper" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "バックグラウンドヘルパー"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -189,6 +267,12 @@
     },
     "A backup to the per-agent setup: while Adrafinil is already keeping your Mac awake for one agent, it can also notice other known agents (like a second Claude Code) running without their hook installed. It only runs while an agent is already active — never a background scan — so it costs nothing while your Mac is idle or asleep." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "エージェントごとの設定を補うしくみです。Adrafinil があるエージェントのために Mac のスリープを抑止している間、フックが入っていないまま動いている既知のエージェント（2 つ目の Claude Code など）にも気づけます。すでにエージェントが動作しているときにだけ実行され、バックグラウンドでのスキャンは行わないため、Mac がアイドル状態やスリープ中のときにコストはかかりません。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -200,6 +284,12 @@
     "A display hold is active but the lid is closed with no other display — the agent behind it can't see the screen." : {
       "extractionState" : "manual",
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ディスプレイのスリープ抑止が有効ですが、ふたが閉じられていて他のディスプレイもありません。この抑止を要求したエージェントは画面を見ることができません。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -210,6 +300,12 @@
     },
     "A menu bar app" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メニューバーアプリ"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -220,6 +316,12 @@
     },
     "A newer version of Adrafinil is out. See what's new and install it." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adrafinil の新しいバージョンがあります。新機能を確認してインストールしてください。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -230,6 +332,12 @@
     },
     "A newer version of Adrafinil is ready when you are." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adrafinil の新しいバージョンの準備ができています。いつでもインストールできます。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -240,6 +348,12 @@
     },
     "A question, a plan approval, or a permission prompt stops the work until you answer — but the question can be answered from your phone with Remote Control, which needs the Mac awake to receive it. The grace period keeps it reachable exactly that long; if nobody answers, your Mac sleeps, and the moment the session resumes Adrafinil protects it again. The menu shows a countdown while it waits." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "質問、プランの承認、権限の確認があると、答えるまで作業は止まります。ただし Remote Control を使えばスマートフォンから答えられ、それを受け取るには Mac が起きている必要があります。猶予期間の間はちょうどその分だけ Mac に接続できる状態を保ちます。誰も答えなければ Mac はスリープし、セッションが再開した瞬間に Adrafinil が再び保護します。待機中はメニューにカウントダウンが表示されます。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -253,6 +367,12 @@
     },
     "About" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "情報"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -263,6 +383,12 @@
     },
     "Add these to your agent's start and stop hooks. Replace %@ with your agent's session-id variable, so each turn's acquire and release share a key." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "これらをエージェントの開始フックと停止フックに追加してください。%@ はエージェントのセッション ID 変数に置き換え、各ターンの acquire と release が同じキーを共有するようにします。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -273,6 +399,12 @@
     },
     "Add your own agent" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "独自のエージェントを追加"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -283,6 +415,12 @@
     },
     "Adds Adrafinil as an MCP tool in %@, so it can keep your Mac awake for work that runs past its reply." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ に Adrafinil を MCP ツールとして追加し、応答が終わった後も続く作業のために Mac のスリープを抑止できるようにします。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -293,6 +431,12 @@
     },
     "Adds Adrafinil as an MCP tool in %@, so the agent can keep your Mac awake for work that runs past its reply." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ に Adrafinil を MCP ツールとして追加し、エージェントが応答後も続く作業のために Mac のスリープを抑止できるようにします。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -303,6 +447,12 @@
     },
     "Adrafinil Setup" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adrafinil のセットアップ"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -313,6 +463,12 @@
     },
     "Adrafinil checks GitHub Releases once a day and tells you here and in the menu when a new version is out. Nothing downloads or installs until you choose Update Now." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adrafinil は 1 日に 1 回 GitHub Releases を確認し、新しいバージョンがあればこことメニューでお知らせします。「今すぐアップデート」を選ぶまで、ダウンロードもインストールも行いません。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -323,6 +479,12 @@
     },
     "Adrafinil checks GitHub Releases once a day and verifies every download's code signature. Updates install themselves when your Mac is idle and no agents are being kept awake — or right away with Update Now." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adrafinil は 1 日に 1 回 GitHub Releases を確認し、ダウンロードごとにコード署名を検証します。アップデートは Mac がアイドル状態で、スリープを抑止中のエージェントがないときに自動でインストールされます。「今すぐアップデート」ですぐにインストールすることもできます。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -333,6 +495,12 @@
     },
     "Adrafinil chime" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adrafinil のチャイム"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -343,6 +511,12 @@
     },
     "Adrafinil couldn't clean up everywhere — remove these by hand, or the agent will keep calling a command that no longer exists:\n\n%@" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adrafinil はすべての場所を整理できませんでした。以下を手動で削除してください。そのままにすると、エージェントはもう存在しないコマンドを呼び続けます:\n\n%@"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -353,6 +527,12 @@
     },
     "Adrafinil cue" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adrafinil の合図音"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -363,6 +543,12 @@
     },
     "Adrafinil is running from a temporary location (macOS translocation). Setting up from here would point everything at a path that disappears on the next launch. Move Adrafinil.app to your Applications folder, then open it again." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adrafinil は一時的な場所から実行されています（macOS の App Translocation）。ここからセットアップすると、すべての設定が次回起動時に消えるパスを指すことになります。Adrafinil.app を「アプリケーション」フォルダに移動してから、もう一度開いてください。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -373,6 +559,12 @@
     },
     "Adrafinil is set up" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adrafinil のセットアップが完了しました"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -383,6 +575,12 @@
     },
     "Adrafinil isn't keeping your Mac awake" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adrafinil は Mac のスリープを抑止していません"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -393,6 +591,12 @@
     },
     "Adrafinil isn't set up" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adrafinil はセットアップされていません"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -403,6 +607,12 @@
     },
     "Adrafinil keeps it awake while your agents work — a desktop still sleeps on idle and would stall a long task. Lid and battery features are hidden because there's no lid or battery to manage." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "エージェントの作業中は Adrafinil がスリープを抑止します。デスクトップ機もアイドル時にはスリープし、長い作業が止まってしまうためです。ふたとバッテリーに関する機能は、管理するふたもバッテリーもないため非表示です。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -413,6 +623,12 @@
     },
     "Adrafinil keeps your Mac awake — even with the lid closed — while your AI agents work." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AI エージェントの作業中、Adrafinil は Mac のスリープを抑止します。ふたを閉じていても同様です。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -423,6 +639,12 @@
     },
     "Adrafinil kept your Mac awake" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adrafinil が Mac のスリープを抑止しました"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -433,6 +655,12 @@
     },
     "Adrafinil let it sleep to cool down (it peaked at %lld°C). %@" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "冷却のため Adrafinil がスリープさせました（最高 %lld°C）。%@"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -443,6 +671,12 @@
     },
     "Adrafinil let it sleep to cool down. %@" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "冷却のため Adrafinil がスリープさせました。%@"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -453,6 +687,12 @@
     },
     "Adrafinil let your Mac sleep to save power. %@" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "電力節約のため Adrafinil が Mac をスリープさせました。%@"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -463,6 +703,12 @@
     },
     "Adrafinil needs your approval" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adrafinil の承認が必要です"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -473,6 +719,12 @@
     },
     "Adrafinil updated itself at a quiet moment — here's what changed." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adrafinil は空き時間に自動でアップデートされました。変更内容は次のとおりです。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -483,6 +735,12 @@
     },
     "Adrafinil updated itself at a quiet moment. See what's new." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adrafinil は空き時間に自動でアップデートされました。新機能を確認してください。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -496,6 +754,12 @@
     },
     "Adrafinil's background helper didn't respond in time." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adrafinil のバックグラウンドヘルパーが時間内に応答しませんでした。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -506,6 +770,12 @@
     },
     "Adrafinil's background helper sent an unexpected response." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adrafinil のバックグラウンドヘルパーから予期しない応答がありました。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -516,6 +786,12 @@
     },
     "Adrafinil's helper isn't responding" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adrafinil のヘルパーが応答しません"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -526,6 +802,12 @@
     },
     "Adrafinil's helper stopped" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adrafinil のヘルパーが停止しました"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -536,6 +818,12 @@
     },
     "Agent holds" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "エージェントによるスリープ抑止"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -546,6 +834,12 @@
     },
     "Agent name" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "エージェント名"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -556,6 +850,12 @@
     },
     "Agents" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "エージェント"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -566,6 +866,12 @@
     },
     "Agents can't keep your Mac awake until you resume" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "再開するまで、エージェントは Mac のスリープを抑止できません"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -576,6 +882,12 @@
     },
     "Agents finished" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "エージェントが完了"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -586,6 +898,12 @@
     },
     "Agents that run as one shared background service, like Hermes, aren't picked up this way — connect them in the Agents tab so their hooks can signal when they're actually working." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hermes のように共有のバックグラウンドサービスとして動作するエージェントは、この方法では検出されません。「エージェント」タブで接続し、フックが実際の作業中を知らせられるようにしてください。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -596,6 +914,12 @@
     },
     "All set — Codex will keep your Mac awake while it works." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "準備完了です。Codex の作業中は Mac のスリープが抑止されます。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -606,6 +930,12 @@
     },
     "An agent can ask Adrafinil to keep your Mac awake for a background task it started — like a long build or deploy — even after it finishes replying. Every hold has a time limit and shows up in the menu, where you can end it yourself." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "エージェントは、自身が開始したバックグラウンドタスク（長いビルドやデプロイなど）のために、応答を終えた後も Mac のスリープ抑止を Adrafinil に要求できます。すべてのスリープ抑止には時間制限があり、メニューに表示されるので、そこから自分で終了できます。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -616,6 +946,12 @@
     },
     "Approve Adrafinil's two hooks" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adrafinil の 2 つのフックを承認"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -632,6 +968,12 @@
     },
     "Back to presets" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "プリセットに戻る"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -642,6 +984,12 @@
     },
     "Background shell tasks" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "バックグラウンドのシェルタスク"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -652,6 +1000,12 @@
     },
     "Battery was running low" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "バッテリー残量が少なくなっていました"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -663,6 +1017,12 @@
     "CPU temperature is unreadable, so the thermal cutout can't trigger." : {
       "extractionState" : "manual",
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "CPU 温度を読み取れないため、過熱保護は作動できません。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -673,6 +1033,12 @@
     },
     "Can't verify — trust it in Codex" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "確認できません。Codex で信頼してください"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -683,6 +1049,12 @@
     },
     "Cancel" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "キャンセル"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -693,6 +1065,12 @@
     },
     "Check for updates" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アップデートを確認"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -703,6 +1081,12 @@
     },
     "Checking for updates…" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アップデートを確認中…"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -719,6 +1103,12 @@
     },
     "Codex needs you to trust its hooks" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Codex でフックを信頼する必要があります"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -729,6 +1119,12 @@
     },
     "Codex only runs hooks you've approved. Until you trust Adrafinil's, Codex won't tell it when a turn starts or ends — so your Mac may sleep mid-task, or stay awake after Codex is done." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Codex は承認済みのフックしか実行しません。Adrafinil のフックを信頼するまで、Codex はターンの開始と終了を Adrafinil に伝えません。そのため、作業の途中で Mac がスリープしたり、Codex の終了後も起きたままになったりすることがあります。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -739,6 +1135,12 @@
     },
     "Codex won't run these hooks until you trust them. Open Codex, run “/hooks”, and approve Adrafinil's acquire and release entries — otherwise it can't tell when Codex is working." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "これらのフックは、信頼するまで Codex では実行されません。Codex を開いて「/hooks」を実行し、Adrafinil の acquire と release のエントリを承認してください。承認しないと、Codex の作業中であることを検知できません。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -749,6 +1151,12 @@
     },
     "Config unreadable" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "設定を読み込めません"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -759,6 +1167,12 @@
     },
     "Connect each agent so Adrafinil knows when it's working and keeps your Mac awake only then. Some agents can also keep it awake on their own — for a build or deploy that runs past their reply. You can change all of this later in Settings." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "各エージェントを接続すると、Adrafinil はその作業中を把握し、そのときだけ Mac のスリープを抑止します。エージェントによっては、応答後も続くビルドやデプロイのために、自らスリープを抑止できるものもあります。これらはすべて後から「設定」で変更できます。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -769,6 +1183,12 @@
     },
     "Connect your agents" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "エージェントを接続"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -779,6 +1199,12 @@
     },
     "Connected" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "接続済み"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -789,6 +1215,12 @@
     },
     "Connecting your agents…" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "エージェントを接続中…"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -799,6 +1231,12 @@
     },
     "Consider quiet after" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "無応答とみなすまでの時間"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -809,6 +1247,12 @@
     },
     "Continue" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "続ける"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -819,6 +1263,12 @@
     },
     "Copy to clipboard" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "クリップボードにコピー"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -829,6 +1279,12 @@
     },
     "Copy “/hooks”" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "「/hooks」をコピー"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -839,6 +1295,12 @@
     },
     "Couldn't download the update. Check your connection, or get it from the releases page." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アップデートをダウンロードできませんでした。接続を確認するか、リリースページから入手してください。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -849,6 +1311,12 @@
     },
     "Couldn't find a download for this update. Get it from the releases page." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "このアップデートのダウンロードが見つかりませんでした。リリースページから入手してください。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -859,6 +1327,12 @@
     },
     "Couldn't load the release notes." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "リリースノートを読み込めませんでした。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -869,6 +1343,12 @@
     },
     "Couldn't reach Adrafinil's background helper." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adrafinil のバックグラウンドヘルパーに接続できませんでした。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -879,6 +1359,12 @@
     },
     "Couldn't repair Adrafinil automatically" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adrafinil を自動で修復できませんでした"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -889,6 +1375,12 @@
     },
     "Count Me In" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "参加する"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -899,6 +1391,12 @@
     },
     "Count this Mac" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "この Mac をカウント"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -909,6 +1407,12 @@
     },
     "Count yourself in" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "利用者数に参加"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -919,6 +1423,12 @@
     },
     "Counting" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "カウント"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -929,6 +1439,12 @@
     },
     "Counting and crash reports" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "カウントとクラッシュレポート"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -939,6 +1455,12 @@
     },
     "Counts how many people use Adrafinil. On each day you use it, one anonymous check-in is sent:" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adrafinil の利用者数をカウントします。使用した日ごとに、匿名のチェックインを 1 回送信します:"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -949,6 +1471,12 @@
     },
     "Crash reports adds a report when Adrafinil itself crashes, with your name, your Mac’s name and folder paths removed. Turning this off deletes everything this Mac sent." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "クラッシュレポートを有効にすると、Adrafinil 自体がクラッシュしたときにレポートを追加します。名前、Mac の名前、フォルダのパスは取り除かれます。オフにすると、この Mac が送信した内容をすべて削除します。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -959,6 +1487,12 @@
     },
     "Custom agents aren't auto-detected or watched, so pair every acquire with a reliable release — the idle-release timeout and each hold's time limit are the only safety net if one is missed. Snippets assume the %@ command is on your PATH (%@, or %@)." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "カスタムエージェントは自動検出も監視もされないため、各 acquire には必ず確実な release を組み合わせてください。release が漏れた場合の安全策は、アイドル時の解除タイムアウトと各スリープ抑止の時間制限だけです。スニペットは %1$@ コマンドが PATH にあることを前提とします（%2$@ または %3$@）。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -969,6 +1503,12 @@
     },
     "Custom duration" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "カスタムの時間"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -982,6 +1522,12 @@
     },
     "Deleting what this Mac sent…" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "この Mac が送信した内容を削除中…"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -992,6 +1538,12 @@
     },
     "Disconnects Adrafinil from every agent, turns off its background services, removes the adrafinil command, and deletes its settings — then quits." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "すべてのエージェントとの接続を解除し、バックグラウンドサービスを停止し、adrafinil コマンドを削除して設定を消去してから終了します。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1002,6 +1554,12 @@
     },
     "Done" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "完了"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1015,6 +1573,12 @@
     },
     "Finding agents" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "エージェントを検索中"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1025,6 +1589,12 @@
     },
     "Force sleep when CPU temperature is too high" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "CPU 温度が高すぎるときは強制的にスリープ"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1035,6 +1605,12 @@
     },
     "Force sleep when battery runs low (on battery, lid closed)" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "バッテリー残量が少なくなったら強制的にスリープ（バッテリー駆動でふたを閉じているとき）"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1048,6 +1624,12 @@
     },
     "General" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "一般"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1058,6 +1640,12 @@
     },
     "Grace period" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "猶予期間"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1068,6 +1656,12 @@
     },
     "Hear this sound" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "このサウンドを再生"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1078,6 +1672,12 @@
     },
     "Hold expired" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "スリープ抑止の期限切れ"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1088,6 +1688,12 @@
     },
     "Hooks trusted" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "フックは信頼済み"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1098,6 +1704,12 @@
     },
     "How to trust" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "信頼する方法"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1108,6 +1720,12 @@
     },
     "Idle agents" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アイドル状態のエージェント"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1118,6 +1736,12 @@
     },
     "If an agent does nothing for a while, Adrafinil stops keeping your Mac awake for it — so a stuck or crashed agent can't hold it up forever." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "エージェントがしばらく何もしない場合、Adrafinil はそのエージェントのためのスリープ抑止をやめます。止まったりクラッシュしたりしたエージェントが、Mac をいつまでも起こしておくことはありません。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1131,6 +1755,12 @@
     },
     "Install" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "インストール"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1141,6 +1771,12 @@
     },
     "Install one of the supported agents, then connect it any time from Settings → Agents." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "対応しているエージェントをインストールしてから、「設定」→「エージェント」でいつでも接続できます。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1151,6 +1787,12 @@
     },
     "Install updates automatically" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アップデートを自動的にインストール"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1164,6 +1806,12 @@
     },
     "Integration style" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "連携方法"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1174,6 +1822,12 @@
     },
     "It has hooks / events" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "フックやイベントがある"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1184,6 +1838,12 @@
     },
     "It has no hooks — wrap the command" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "フックがない（コマンドをラップする）"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1194,6 +1854,12 @@
     },
     "It needs your approval to run in the background. Tap to open Login Items & Extensions, then turn Adrafinil on." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "バックグラウンドで実行するには承認が必要です。クリックして「ログイン項目と機能拡張」を開き、Adrafinil をオンにしてください。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1204,6 +1870,12 @@
     },
     "It never includes which agents you run or what you work on, and nothing in it names you." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "どのエージェントを使っているか、何に取り組んでいるかは含まれず、個人を特定できる情報もありません。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1214,6 +1886,12 @@
     },
     "It now lives in your menu bar. Close the lid while an agent is working — your Mac stays awake. No agent running? Sleep behaves normally." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メニューバーに常駐します。エージェントの作業中にふたを閉じても Mac は起きたままです。エージェントが動いていなければ、通常どおりスリープします。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1224,6 +1902,12 @@
     },
     "It will install itself when your Mac is idle and no agents are working." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mac がアイドル状態で、作業中のエージェントがないときに自動でインストールされます。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1234,6 +1918,12 @@
     },
     "It's fully open source —" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "完全なオープンソースです。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1244,6 +1934,12 @@
     },
     "Its Adrafinil hook changed, so your Mac might not stay awake while it works. Open Settings to reconnect." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adrafinil のフックが変更されたため、作業中に Mac がスリープしてしまう可能性があります。「設定」を開いて再接続してください。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1254,6 +1950,12 @@
     },
     "Its background service isn't registered, so it can't keep your Mac awake. Repair it to register it again." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "バックグラウンドサービスが登録されていないため、Mac のスリープを抑止できません。「修復」で再登録してください。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1264,6 +1966,12 @@
     },
     "Its background service isn't responding. Repair it to re-register and bring it back." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "バックグラウンドサービスが応答しません。「修復」で再登録して復旧してください。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1274,6 +1982,12 @@
     },
     "Its background service isn't set up. Tap to finish setting up Adrafinil." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "バックグラウンドサービスがセットアップされていません。クリックして Adrafinil のセットアップを完了してください。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1284,6 +1998,12 @@
     },
     "Its background service stopped responding and couldn't repair itself. Tap to open Login Items & Extensions, remove Adrafinil, then reopen it." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "バックグラウンドサービスが応答しなくなり、自動修復もできませんでした。クリックして「ログイン項目と機能拡張」を開き、Adrafinil を削除してから、もう一度開いてください。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1294,6 +2014,12 @@
     },
     "Keep awake" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "スリープを抑止"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1304,6 +2030,12 @@
     },
     "Keep awake until you turn it off" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "オフにするまでスリープを抑止"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1314,6 +2046,12 @@
     },
     "Keep the Mac awake for background shell commands" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "バックグラウンドのシェルコマンドのためにスリープを抑止"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1324,6 +2062,12 @@
     },
     "Keep the Mac awake for them too" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "それらのためにもスリープを抑止"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1334,6 +2078,12 @@
     },
     "Keep your Mac awake" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mac のスリープを抑止"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1344,6 +2094,12 @@
     },
     "Keep your Mac awake for a set time" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "指定した時間だけスリープを抑止"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1354,6 +2110,12 @@
     },
     "Keep your Mac awake only while AI agents are working." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AI エージェントの作業中だけ、Mac のスリープを抑止します。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1364,6 +2126,12 @@
     },
     "Keeping your Mac awake" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mac のスリープを抑止中"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1374,6 +2142,12 @@
     },
     "Keeps your Mac awake while agents work. Registered as a login service so it's ready after a restart." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "エージェントの作業中に Mac のスリープを抑止します。ログインサービスとして登録されるため、再起動後もすぐに使えます。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1384,6 +2158,12 @@
     },
     "Kept awake by you" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "手動でスリープを抑止"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1394,6 +2174,12 @@
     },
     "Later" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "後で"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1404,6 +2190,12 @@
     },
     "Launch at login" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ログイン時に開く"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1414,6 +2206,12 @@
     },
     "Let agents keep your Mac awake on their own" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "エージェントが自らスリープを抑止できるようにする"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1424,6 +2222,12 @@
     },
     "Let it keep your Mac awake on its own" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "このエージェントが自らスリープを抑止できるようにする"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1434,6 +2238,12 @@
     },
     "Let it sleep" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "スリープさせる"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1444,6 +2254,12 @@
     },
     "Let it sleep right away" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "すぐにスリープさせる"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1454,6 +2270,12 @@
     },
     "Lets your agents tell Adrafinil when they start and stop working." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "エージェントが作業の開始と終了を Adrafinil に伝えられるようにします。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1464,6 +2286,12 @@
     },
     "Lid closed" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ふたが閉じています"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1477,6 +2305,12 @@
     },
     "Lock the screen when you close the lid" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ふたを閉じたときに画面をロック"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1487,6 +2321,12 @@
     },
     "Longest a hold can last" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "スリープ抑止の最長時間"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1497,6 +2337,12 @@
     },
     "Low-battery cutout" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "バッテリー残量低下時の保護"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1507,6 +2353,12 @@
     },
     "MIT License · © 2026 kageroumado" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MIT ライセンス · © 2026 kageroumado"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1523,6 +2375,12 @@
     },
     "Move Adrafinil to Applications first" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "まず Adrafinil を「アプリケーション」に移動してください"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1533,6 +2391,12 @@
     },
     "Needs reconnect" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "再接続が必要"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1543,6 +2407,12 @@
     },
     "No agents active — close the lid and your Mac sleeps" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "動作中のエージェントはありません。ふたを閉じると Mac はスリープします"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1553,6 +2423,12 @@
     },
     "No agents active — your Mac sleeps when idle" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "動作中のエージェントはありません。アイドル時には Mac はスリープします"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1563,6 +2439,12 @@
     },
     "No agents were running." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "動作中のエージェントはありませんでした。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1573,6 +2455,12 @@
     },
     "No hooks? Wrap the command so it stays awake for the whole run — or place a single timed hold for a background job." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "フックがない場合は、コマンドをラップして実行中ずっとスリープを抑止するか、バックグラウンドジョブのために時間制限付きのスリープ抑止を 1 回だけ設定します。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1583,6 +2471,12 @@
     },
     "No supported agents detected." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "対応するエージェントが検出されませんでした。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1593,6 +2487,12 @@
     },
     "No supported agents found yet" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "対応するエージェントはまだ見つかっていません"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1603,6 +2503,12 @@
     },
     "Not Now" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今はしない"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1613,6 +2519,12 @@
     },
     "Not sent yet: %@" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未送信: %@"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1623,6 +2535,12 @@
     },
     "Not trusted yet" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "まだ信頼されていません"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1633,6 +2551,12 @@
     },
     "Notice other agents while one is active" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "エージェントの動作中に他のエージェントにも気づく"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1643,6 +2567,12 @@
     },
     "Notifications are turned off for Adrafinil in System Settings, so the “while you were away” recap won't appear after you reopen the lid." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "「システム設定」で Adrafinil の通知がオフになっているため、ふたを開けた後に「留守中の出来事」のまとめは表示されません。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1653,6 +2583,12 @@
     },
     "Off" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "オフ"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1663,6 +2599,12 @@
     },
     "On start / prompt" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "開始時 / プロンプト送信時"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1673,6 +2615,12 @@
     },
     "On stop / finish" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "停止時 / 完了時"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1683,6 +2631,12 @@
     },
     "One anonymous check-in a day counts how many people use Adrafinil. It never includes what you work on or which agents you run. Settings › General lists what is sent." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 日 1 回の匿名チェックインで、Adrafinil の利用者数をカウントします。何に取り組んでいるか、どのエージェントを使っているかは含まれません。送信内容は「設定」›「一般」で確認できます。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1693,6 +2647,12 @@
     },
     "One quick approval" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "承認は 1 回だけ"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1703,6 +2663,12 @@
     },
     "One-shot hold" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 回限りのスリープ抑止"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1713,6 +2679,12 @@
     },
     "Open Codex in your terminal" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ターミナルで Codex を開く"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1726,6 +2698,12 @@
     },
     "Open Login Items" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ログイン項目を開く"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1736,6 +2714,12 @@
     },
     "Open Login Items & Extensions, switch Adrafinil off and remove it with the “–” button, then reopen the app — or try repairing once more." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "「ログイン項目と機能拡張」を開き、Adrafinil をオフにして「–」ボタンで削除してから、アプリを開き直してください。または、もう一度修復を試してください。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1764,6 +2748,12 @@
     },
     "Open setup again…" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "セットアップをもう一度開く…"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1777,6 +2767,12 @@
     },
     "Partly trusted — approve both" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "一部のみ信頼済み。両方を承認してください"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1787,6 +2783,12 @@
     },
     "Pause Adrafinil — your Mac sleeps normally until you resume." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adrafinil を一時停止します。再開するまで Mac は通常どおりスリープします。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1797,6 +2799,12 @@
     },
     "Paused" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "一時停止中"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1810,6 +2818,12 @@
     },
     "Play a sound before your Mac goes back to sleep" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mac がスリープに戻る前にサウンドを再生"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1820,6 +2834,12 @@
     },
     "Play a sound when you close the lid" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ふたを閉じたときにサウンドを再生"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1836,6 +2856,12 @@
     },
     "Quit Adrafinil" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adrafinil を終了"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1846,6 +2872,12 @@
     },
     "Quit Adrafinil?" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adrafinil を終了しますか？"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1856,6 +2888,12 @@
     },
     "Quit Anyway" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "このまま終了"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1866,6 +2904,12 @@
     },
     "Re-check" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "再確認"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1876,6 +2920,12 @@
     },
     "Re-registering its background services and checking they respond." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "バックグラウンドサービスを再登録し、応答を確認しています。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1886,6 +2936,12 @@
     },
     "Read them on GitHub" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "GitHub で読む"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1896,6 +2952,12 @@
     },
     "Reconnect" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "再接続"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1906,6 +2968,12 @@
     },
     "Registering…" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "登録中…"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1916,6 +2984,12 @@
     },
     "Release this hold — let the Mac sleep normally" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "このスリープ抑止を解除して、Mac を通常どおりスリープさせる"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1926,6 +3000,12 @@
     },
     "Released by you" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "手動で解除"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1936,6 +3016,12 @@
     },
     "Reopens the guided setup. Use it to connect a new agent, or to fix one that shows “Needs reconnect”." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ガイド付きのセットアップをもう一度開きます。新しいエージェントを接続したり、「再接続が必要」と表示されているエージェントを修復したりするときに使います。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1946,6 +3032,12 @@
     },
     "Repair" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "修復"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1956,6 +3048,12 @@
     },
     "Repair Again" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "もう一度修復"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1966,6 +3064,12 @@
     },
     "Repairing Adrafinil…" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adrafinil を修復中…"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1979,6 +3083,12 @@
     },
     "Resume Adrafinil — let agents keep your Mac awake again." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adrafinil を再開して、エージェントが再び Mac のスリープを抑止できるようにします。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1989,6 +3099,12 @@
     },
     "Retry" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "再試行"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1999,6 +3115,12 @@
     },
     "Run the /hooks command" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/hooks コマンドを実行"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2009,6 +3131,12 @@
     },
     "Safety" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "安全"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2019,6 +3147,12 @@
     },
     "Safety cutout" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "安全保護"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2030,6 +3164,12 @@
     "Safety cutouts are active (overheating and low battery) — acquires are paused until conditions recover or the lid opens." : {
       "extractionState" : "manual",
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "安全保護が作動しています（過熱とバッテリー残量低下）。状態が回復するかふたを開くまで、新しいスリープ抑止の要求は保留されます。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2043,6 +3183,12 @@
     },
     "Settings" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "設定"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2056,6 +3202,12 @@
     },
     "Settings…" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "設定…"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2066,6 +3218,12 @@
     },
     "Setup couldn't register a background service" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "セットアップでバックグラウンドサービスを登録できませんでした"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2076,6 +3234,12 @@
     },
     "Show %@'s settings file in Finder" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ の設定ファイルを Finder で表示"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2086,6 +3250,12 @@
     },
     "Show in menu bar" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メニューバーに表示"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2096,6 +3266,12 @@
     },
     "Skip" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "スキップ"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2106,6 +3282,12 @@
     },
     "Sleep after a grace period" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "猶予期間の後にスリープ"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2116,6 +3298,12 @@
     },
     "Sleeping normally" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "通常どおりスリープ"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2126,6 +3314,12 @@
     },
     "Some hooks need manual cleanup" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "一部のフックは手動での削除が必要です"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2136,6 +3330,12 @@
     },
     "Sound" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "サウンド"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2146,6 +3346,12 @@
     },
     "Start a Codex session where you'd normally use it." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "いつも使っている場所で Codex のセッションを開始します。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2156,6 +3362,12 @@
     },
     "Start keeping awake" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "スリープの抑止を開始"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2166,6 +3378,12 @@
     },
     "Stop waiting on agents that go quiet" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "無応答になったエージェントを待たない"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2176,6 +3394,12 @@
     },
     "System Settings → Login Items & Extensions just opened. Turn **Adrafinil** on under “Allow in the Background,” then come back and click Continue." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "「システム設定」→「ログイン項目と機能拡張」が開きました。「バックグラウンドでの実行を許可」で **Adrafinil** をオンにしてから、ここに戻って「続ける」をクリックしてください。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2186,6 +3410,12 @@
     },
     "The %@ command" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ コマンド"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2196,6 +3426,12 @@
     },
     "The controls you're looking at now — its window opens from the menu bar." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今見ているこの画面のことです。ウインドウはメニューバーから開きます。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2207,6 +3443,12 @@
     "The low-battery cutout fired — acquires are paused until charging resumes or the lid opens." : {
       "extractionState" : "manual",
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "バッテリー残量低下時の保護が作動しました。充電が再開するかふたを開くまで、新しいスリープ抑止の要求は保留されます。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2218,6 +3460,12 @@
     "The sleep block couldn't be fully applied — your Mac may still sleep when the lid closes. Retrying." : {
       "extractionState" : "manual",
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "スリープの抑止を完全には適用できませんでした。ふたを閉じると Mac がスリープする可能性があります。再試行しています。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2229,6 +3477,12 @@
     "The thermal cutout fired — acquires are paused until the Mac cools down or the lid opens." : {
       "extractionState" : "manual",
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "過熱保護が作動しました。Mac が冷えるかふたを開くまで、新しいスリープ抑止の要求は保留されます。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2239,6 +3493,12 @@
     },
     "The update couldn't be installed. Try again, or get it from the releases page." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アップデートをインストールできませんでした。もう一度試すか、リリースページから入手してください。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2249,6 +3509,12 @@
     },
     "Their Adrafinil hooks changed, so your Mac might not stay awake while they work. Open Settings to reconnect." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adrafinil のフックが変更されたため、これらのエージェントの作業中に Mac がスリープしてしまう可能性があります。「設定」を開いて再接続してください。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2259,6 +3525,12 @@
     },
     "Thermal cutout" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "過熱保護"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2269,6 +3541,12 @@
     },
     "These apply when an agent is still working as you close the lid — a sound to confirm your Mac is staying awake, and a locked screen to keep it private." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "これらは、エージェントの作業中にふたを閉じたときに適用されます。サウンドで Mac が起きたままであることを確認し、画面をロックしてプライバシーを守ります。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2279,6 +3557,12 @@
     },
     "This Mac has no Secure Enclave, so nothing is sent." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "この Mac には Secure Enclave がないため、何も送信されません。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2289,6 +3573,12 @@
     },
     "This disconnects Adrafinil from all your agents, turns off its background services, and removes the adrafinil command and its settings. This can't be undone." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "すべてのエージェントとの接続を解除し、バックグラウンドサービスを停止し、adrafinil コマンドと設定を削除します。この操作は取り消せません。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2299,6 +3589,12 @@
     },
     "This looks like a desktop Mac" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "デスクトップ型の Mac のようです"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2309,6 +3605,12 @@
     },
     "This release shipped without notes." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "このリリースにはリリースノートがありません。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2319,6 +3621,12 @@
     },
     "Threshold" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "しきい値"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2329,6 +3637,12 @@
     },
     "Tracked as %@ in Adrafinil" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adrafinil では %@ として表示"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2339,6 +3653,12 @@
     },
     "Trust Adrafinil in Codex" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Codex で Adrafinil を信頼"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2349,6 +3669,12 @@
     },
     "Trust the entries that run **adrafinil acquire** (on prompt submit) and **adrafinil release** (on stop). They're listed under your hooks file; approving each is a one-time step." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**adrafinil acquire**（プロンプト送信時）と **adrafinil release**（停止時）を実行するエントリを信頼してください。フックファイルの下に一覧表示され、それぞれの承認は 1 回だけで済みます。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2359,6 +3685,12 @@
     },
     "Turn Adrafinil on under “Allow in the Background” so it can keep your Mac awake while agents work. If it won't turn on, try Repair." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "「バックグラウンドでの実行を許可」で Adrafinil をオンにすると、エージェントの作業中に Mac のスリープを抑止できます。オンにできない場合は「修復」を試してください。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2369,6 +3701,12 @@
     },
     "Turn an agent on and Adrafinil keeps your Mac awake while it's working, then lets it sleep again when the agent stops. Turn it off to disconnect. Some agents can also keep your Mac awake on their own — that adds Adrafinil as an MCP tool they can call." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "エージェントをオンにすると、Adrafinil はその作業中に Mac のスリープを抑止し、エージェントが停止したら再びスリープできるようにします。オフにすると接続を解除します。エージェントによっては自らスリープを抑止できるものもあり、その場合は Adrafinil を呼び出し可能な MCP ツールとして追加します。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2379,6 +3717,12 @@
     },
     "Type" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "コマンド"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2389,6 +3733,12 @@
     },
     "Uninstall Adrafinil?" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adrafinil をアンインストールしますか？"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2399,6 +3749,12 @@
     },
     "Uninstall and Quit" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アンインストールして終了"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2409,6 +3765,12 @@
     },
     "Uninstall and quit…" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アンインストールして終了…"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2419,6 +3781,12 @@
     },
     "Until you approve them in Codex with /hooks, your Mac won't stay awake while Codex works. Open Settings for the steps." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Codex で /hooks を使って承認するまで、Codex の作業中に Mac のスリープは抑止されません。手順は「設定」で確認できます。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2429,6 +3797,12 @@
     },
     "Update Now" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今すぐアップデート"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2439,6 +3813,12 @@
     },
     "Update available — %@" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アップデートあり: %@"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2449,6 +3829,12 @@
     },
     "Update to %@ Now" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今すぐ %@ にアップデート"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2459,6 +3845,12 @@
     },
     "Updated to %@" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ にアップデートしました"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2469,6 +3861,12 @@
     },
     "Updates" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アップデート"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2479,6 +3877,12 @@
     },
     "Updating…" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アップデート中…"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2492,6 +3896,12 @@
     },
     "Version %@" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "バージョン %@"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2502,6 +3912,12 @@
     },
     "Version %@ is downloaded and verified — it installs at a quiet moment, when your Mac is idle and no agents are being kept awake." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "バージョン %@ をダウンロードして検証しました。Mac がアイドル状態で、スリープを抑止中のエージェントがない空き時間にインストールされます。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2512,6 +3928,12 @@
     },
     "View on GitHub" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "GitHub で表示"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2522,6 +3944,12 @@
     },
     "Volume" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "音量"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2532,6 +3960,12 @@
     },
     "Waiting for you — %@" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "応答待ち: %@"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2542,6 +3976,12 @@
     },
     "Waiting for your answer" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "回答を待っています"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2552,6 +3992,12 @@
     },
     "Welcome to Adrafinil" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adrafinil へようこそ"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2562,6 +4008,12 @@
     },
     "What gets set up" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "セットアップされる内容"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2572,6 +4024,12 @@
     },
     "What's New" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新機能"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2582,6 +4040,12 @@
     },
     "What's New…" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新機能…"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2592,6 +4056,12 @@
     },
     "What's new in %@" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ の新機能"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2602,6 +4072,12 @@
     },
     "When Claude Code asks you something" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Claude Code から質問があったとき"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2612,6 +4088,12 @@
     },
     "When an agent runs a shell command in the background — a long build or test run it keeps going after replying — this keeps your Mac awake for it. There's no signal when such a command finishes, so the hold lasts up to your longest-hold limit above (even if the task itself goes quiet, like a “tail -f”) and then ends on its own. Works with Claude Code. Off by default." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "エージェントがバックグラウンドでシェルコマンド（応答後も続く長いビルドやテストなど）を実行しているとき、そのために Mac のスリープを抑止します。こうしたコマンドの終了は通知されないため、スリープ抑止は上の最長時間まで続き（「tail -f」のようにタスク自体が静かになっても同様）、その後自動的に終了します。Claude Code で利用できます。デフォルトではオフです。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2622,6 +4104,12 @@
     },
     "When sleep resumes" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "スリープに戻るとき"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2632,6 +4120,12 @@
     },
     "When the last agent finishes while the lid is closed, Adrafinil plays a cue just before your Mac goes back to sleep — so you know it's done without opening the lid. Each reason can have its own sound; the volume above applies." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ふたを閉じている間に最後のエージェントが完了すると、Mac がスリープに戻る直前に Adrafinil が合図音を鳴らします。ふたを開けなくても完了がわかります。理由ごとに別のサウンドを選べ、音量は上の設定が適用されます。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2642,6 +4136,12 @@
     },
     "When you close the lid" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ふたを閉じたとき"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2652,6 +4152,12 @@
     },
     "While it waits" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "待機中の動作"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2665,6 +4171,12 @@
     },
     "With the icon hidden, Adrafinil keeps running in the background. Reopen it from Spotlight or Finder to bring its menu back as a window." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アイコンを隠しても、Adrafinil はバックグラウンドで動作し続けます。Spotlight や Finder から開き直すと、メニューがウインドウとして表示されます。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2675,6 +4187,12 @@
     },
     "Working…" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "処理中…"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2685,6 +4203,12 @@
     },
     "Wrapper script" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ラッパースクリプト"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2713,6 +4237,12 @@
             }
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "昨日は %lld 台の Mac が参加しました。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2723,6 +4253,12 @@
     },
     "You're up to date" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "最新の状態です"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2733,6 +4269,12 @@
     },
     "Your Mac can sleep again" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mac は再びスリープできます"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2743,6 +4285,12 @@
     },
     "Your Mac goes back to sleeping normally and agents stop being tracked until you open it again." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mac は通常どおりスリープするようになり、次に開くまでエージェントは追跡されません。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2753,6 +4301,12 @@
     },
     "Your Mac was getting hot" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mac が熱くなっていました"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2763,6 +4317,12 @@
     },
     "Your Mac will stay awake" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mac は起きたままになります"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2773,6 +4333,12 @@
     },
     "Your agents" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "お使いのエージェント"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2783,6 +4349,12 @@
     },
     "and press return." : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "を入力して Return キーを押します。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2793,6 +4365,12 @@
     },
     "view it on GitHub" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "GitHub で見る"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2806,6 +4384,12 @@
     },
     "• Adrafinil and macOS versions\n• chip family and memory size\n• language and the date\n• how many of the last 7 days you used it\n• whether this Mac has a lid\n• how many kinds of agent it kept awake in the last week" : {
       "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• Adrafinil と macOS のバージョン\n• チップのファミリーとメモリ容量\n• 言語と日付\n• 直近 7 日のうち使用した日数\n• この Mac にふたがあるかどうか\n• この 1 週間にスリープを抑止したエージェントの種類の数"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",

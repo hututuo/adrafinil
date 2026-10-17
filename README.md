@@ -1,5 +1,7 @@
 # Adrafinil
 
+[English](README.md) · [日本語](README.ja.md)
+
 Adrafinil keeps a Mac awake through a closed lid while a coding agent works, then releases the hold when the turn ends. Hooks track active work across agents; a thermal cutout and automatic release of abandoned holds limit unattended runs.
 
 <a href="https://kagerou.glass/get/adrafinil?from=readme"><img src=".github/download.svg" alt="Download Adrafinil for Mac" width="360" height="80"></a>
