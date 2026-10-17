@@ -887,6 +887,76 @@
         }
       }
     },
+    "Count Me In" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "算我一个"
+          }
+        }
+      }
+    },
+    "Count this Mac" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "统计这台 Mac"
+          }
+        }
+      }
+    },
+    "Count yourself in" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "把你也算上"
+          }
+        }
+      }
+    },
+    "Counting" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "统计"
+          }
+        }
+      }
+    },
+    "Counting and crash reports" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "统计并发送崩溃报告"
+          }
+        }
+      }
+    },
+    "Counts how many people use Adrafinil. On each day you use it, one anonymous check-in is sent:" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "统计有多少人在使用 Adrafinil。在你使用它的每一天，会发送一次匿名签到："
+          }
+        }
+      }
+    },
+    "Crash reports adds a report when Adrafinil itself crashes, with your name, your Mac’s name and folder paths removed. Turning this off deletes everything this Mac sent." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "崩溃报告会在 Adrafinil 自身崩溃时附上一份报告，其中已移除你的姓名、Mac 的名称和文件夹路径。关闭后会删除这台 Mac 发送过的所有内容。"
+          }
+        }
+      }
+    },
     "Custom agents aren't auto-detected or watched, so pair every acquire with a reliable release — the idle-release timeout and each hold's time limit are the only safety net if one is missed. Snippets assume the %@ command is on your PATH (%@, or %@)." : {
       "localizations" : {
         "zh-Hans" : {
@@ -909,6 +979,16 @@
     },
     "Debug Controls" : {
       "shouldTranslate" : false
+    },
+    "Deleting what this Mac sent…" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正在删除这台 Mac 发送过的内容…"
+          }
+        }
+      }
     },
     "Disconnects Adrafinil from every agent, turns off its background services, removes the adrafinil command, and deletes its settings — then quits." : {
       "localizations" : {
@@ -1118,6 +1198,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "它需要你批准才能在后台运行。轻点以打开“登录项与扩展”，然后打开 Adrafinil。"
+          }
+        }
+      }
+    },
+    "It never includes which agents you run or what you work on, and nothing in it names you." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "它从不包含你运行了哪些 Agent 或你在做什么，其中没有任何内容能指明你的身份。"
           }
         }
       }
@@ -1511,6 +1601,26 @@
         }
       }
     },
+    "Not Now" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "暂不"
+          }
+        }
+      }
+    },
+    "Not sent yet: %@" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "尚未发送：%@"
+          }
+        }
+      }
+    },
     "Not trusted yet" : {
       "localizations" : {
         "zh-Hans" : {
@@ -1567,6 +1677,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "停止时 / 完成时"
+          }
+        }
+      }
+    },
+    "One anonymous check-in a day counts how many people use Adrafinil. It never includes what you work on or which agents you run. Settings › General lists what is sent." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "每天一次匿名签到，用来统计有多少人在使用 Adrafinil。它从不包含你在做什么，也不包含你运行了哪些 Agent。设置 › 通用 列出了发送的内容。"
           }
         }
       }
@@ -2157,6 +2277,16 @@
         }
       }
     },
+    "This Mac has no Secure Enclave, so nothing is sent." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "这台 Mac 没有安全隔区，因此不会发送任何内容。"
+          }
+        }
+      }
+    },
     "This disconnects Adrafinil from all your agents, turns off its background services, and removes the adrafinil command and its settings. This can't be undone." : {
       "localizations" : {
         "zh-Hans" : {
@@ -2563,6 +2693,34 @@
         }
       }
     },
+    "Yesterday, %lld Macs counted themselves in." : {
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Yesterday, %lld Mac counted itself in."
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Yesterday, %lld Macs counted themselves in."
+                }
+              }
+            }
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "昨天，有 %lld 台 Mac 把自己算了进来。"
+          }
+        }
+      }
+    },
     "You're up to date" : {
       "localizations" : {
         "zh-Hans" : {
@@ -2645,6 +2803,16 @@
     },
     "“While you were away” panel" : {
       "shouldTranslate" : false
+    },
+    "• Adrafinil and macOS versions\n• chip family and memory size\n• language and the date\n• how many of the last 7 days you used it\n• whether this Mac has a lid\n• how many kinds of agent it kept awake in the last week" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• Adrafinil 和 macOS 的版本\n• 芯片系列和内存大小\n• 语言和日期\n• 最近 7 天里你使用了几天\n• 这台 Mac 是否有盖子\n• 上周它为几种 Agent 保持过唤醒"
+          }
+        }
+      }
     }
   },
   "version" : "1.1"

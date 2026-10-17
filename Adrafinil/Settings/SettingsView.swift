@@ -1,5 +1,6 @@
 import AdrafinilShared
 import AppKit
+import Digoxin
 import Propofol
 import ServiceManagement
 import SwiftUI
@@ -272,6 +273,8 @@ struct GeneralSettingsTab: View {
                 }
             }
 
+            GeneralUsageSection()
+
             Section {
                 Button("Uninstall and quit…", role: .destructive) { showUninstallConfirm = true }
                     // `.bordered` renders a destructive role as plain gray on macOS — prominent +
@@ -374,6 +377,65 @@ struct GeneralSettingsTab: View {
             }
             exit(0)
         }
+    }
+}
+
+// MARK: - Count this Mac
+
+/// Whether this Mac is counted among Adrafinil's users, what that sends, and whether Adrafinil's
+/// own crashes are reported.
+private struct GeneralUsageSection: View {
+    @State private var tier = ConsentTier.off
+    @State private var status: DigoxinStatus = .off
+    @State private var activeCount: Int?
+
+    var body: some View {
+        Section {
+            Picker("Count this Mac", selection: $tier) {
+                Text("Off").tag(ConsentTier.off)
+                Text("Counting").tag(ConsentTier.counting)
+                Text("Counting and crash reports").tag(ConsentTier.crashReports)
+            }
+            .onChange(of: tier) { _, tier in
+                // Reading the stored choice in the task below lands here too.
+                guard UsageCounting.tier != tier else { return }
+                UsageCounting.choose(tier)
+                Task { await refreshStatus() }
+            }
+        } header: {
+            Text("Count this Mac")
+        } footer: {
+            VStack(alignment: .leading, spacing: 6) {
+                Text("Counts how many people use Adrafinil. On each day you use it, one anonymous check-in is sent:")
+                Text("• Adrafinil and macOS versions\n• chip family and memory size\n• language and the date\n• how many of the last 7 days you used it\n• whether this Mac has a lid\n• how many kinds of agent it kept awake in the last week")
+                Text("It never includes which agents you run or what you work on, and nothing in it names you.")
+                Text("Crash reports adds a report when Adrafinil itself crashes, with your name, your Mac’s name and folder paths removed. Turning this off deletes everything this Mac sent.")
+                if let line = statusLine {
+                    Text(line)
+                }
+                if let activeCount {
+                    Text("Yesterday, \(activeCount) Macs counted themselves in.")
+                }
+            }
+        }
+        .task {
+            tier = UsageCounting.tier ?? .off
+            await refreshStatus()
+            activeCount = await ActiveCount.shared.value()
+        }
+    }
+
+    private var statusLine: String? {
+        switch status {
+        case .deletionPending: String(localized: "Deleting what this Mac sent…")
+        case .secureEnclaveUnavailable: String(localized: "This Mac has no Secure Enclave, so nothing is sent.")
+        case let .failing(reason): String(localized: "Not sent yet: \(reason)")
+        case .off, .waiting, .registered: nil
+        }
+    }
+
+    private func refreshStatus() async {
+        status = await UsageCounting.client.status
     }
 }
 

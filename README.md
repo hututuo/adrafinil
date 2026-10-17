@@ -25,6 +25,10 @@ Adrafinil keeps a Mac awake through a closed lid while a coding agent works, the
 
 </details>
 
+## Counting
+
+Nothing is sent unless you say so. The menu asks once; Settings › General holds the choice. If you count yourself in, Adrafinil sends one anonymous check-in on each day you use it: its own and macOS's versions, the chip family and memory size, the language and the date, how many of the last 7 days you used it, whether this Mac has a lid, and how many kinds of agent it kept awake in the last week. It never includes which agents you run, what you work on, or anything that names you. Turning it off deletes everything this Mac sent. [What is kept, for how long, and how an install proves itself](https://github.com/kageroumado/digoxin/blob/main/REFERENCE.md).
+
 ## Notes
 
 - macOS 26.4+; administrator approval for the privileged helper. [macOS 15 backport](https://github.com/valentine/adrafinil).

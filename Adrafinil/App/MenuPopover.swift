@@ -77,6 +77,7 @@ struct MenuPopover: View {
         .task {
             status.refreshAgentHealth()
             maxHoldHours = AdrafinilSettings.load().manualHoldMaxHours
+            UsageCounting.noteUse()
         }
     }
 
@@ -89,6 +90,8 @@ struct MenuPopover: View {
         GlassEffectContainer(spacing: 0) {
             VStack(alignment: .leading, spacing: Theme.Space.md) {
                 header
+
+                UsageQuestionCard()
 
                 // A failed poll takes precedence: if we can't reach the daemon we don't have
                 // trustworthy status, so show the error rather than a stale snapshot. When we know
