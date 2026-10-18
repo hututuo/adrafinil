@@ -353,9 +353,9 @@ struct GeneralSettingsTab: View {
             if let pending = installer.pendingVersion {
                 return String(localized: "Version \(pending) is downloaded and verified — it installs at a quiet moment, when your Mac is idle and no agents are being kept awake.")
             }
-            return String(localized: "Adrafinil checks GitHub Releases once a day and verifies every download's code signature. Updates install themselves when your Mac is idle and no agents are being kept awake — or right away with Update Now.")
+            return String(localized: "Adrafinil checks GitHub Releases every few hours and verifies every download's code signature. Updates install themselves when your Mac is idle and no agents are being kept awake — or right away with Update Now.")
         }
-        return String(localized: "Adrafinil checks GitHub Releases once a day and tells you here and in the menu when a new version is out. Nothing downloads or installs until you choose Update Now.")
+        return String(localized: "Adrafinil checks GitHub Releases every few hours and tells you here and in the menu when a new version is out. Nothing downloads or installs until you choose Update Now.")
     }
 
     private var checkButtonTitle: String {

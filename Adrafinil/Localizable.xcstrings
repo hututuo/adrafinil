@@ -461,34 +461,34 @@
         }
       }
     },
-    "Adrafinil checks GitHub Releases once a day and tells you here and in the menu when a new version is out. Nothing downloads or installs until you choose Update Now." : {
+    "Adrafinil checks GitHub Releases every few hours and tells you here and in the menu when a new version is out. Nothing downloads or installs until you choose Update Now." : {
       "localizations" : {
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Adrafinil は 1 日に 1 回 GitHub Releases を確認し、新しいバージョンがあればこことメニューでお知らせします。「今すぐアップデート」を選ぶまで、ダウンロードもインストールも行いません。"
+            "value" : "Adrafinil は 数時間ごとに GitHub Releases を確認し、新しいバージョンがあればこことメニューでお知らせします。「今すぐアップデート」を選ぶまで、ダウンロードもインストールも行いません。"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Adrafinil 每天检查一次 GitHub Releases，有新版本时会在这里和菜单中告诉你。在你选择“立即更新”之前，不会下载或安装任何内容。"
+            "value" : "Adrafinil 每隔几小时检查一次 GitHub Releases，有新版本时会在这里和菜单中告诉你。在你选择“立即更新”之前，不会下载或安装任何内容。"
           }
         }
       }
     },
-    "Adrafinil checks GitHub Releases once a day and verifies every download's code signature. Updates install themselves when your Mac is idle and no agents are being kept awake — or right away with Update Now." : {
+    "Adrafinil checks GitHub Releases every few hours and verifies every download's code signature. Updates install themselves when your Mac is idle and no agents are being kept awake — or right away with Update Now." : {
       "localizations" : {
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Adrafinil は 1 日に 1 回 GitHub Releases を確認し、ダウンロードごとにコード署名を検証します。アップデートは Mac がアイドル状態で、スリープを抑止中のエージェントがないときに自動でインストールされます。「今すぐアップデート」ですぐにインストールすることもできます。"
+            "value" : "Adrafinil は 数時間ごとに GitHub Releases を確認し、ダウンロードごとにコード署名を検証します。アップデートは Mac がアイドル状態で、スリープを抑止中のエージェントがないときに自動でインストールされます。「今すぐアップデート」ですぐにインストールすることもできます。"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Adrafinil 每天检查一次 GitHub Releases，并验证每个下载的代码签名。更新会在你的 Mac 空闲且没有 Agent 需要保持唤醒时自动安装——也可以点按“立即更新”马上安装。"
+            "value" : "Adrafinil 每隔几小时检查一次 GitHub Releases，并验证每个下载的代码签名。更新会在你的 Mac 空闲且没有 Agent 需要保持唤醒时自动安装——也可以点按“立即更新”马上安装。"
           }
         }
       }

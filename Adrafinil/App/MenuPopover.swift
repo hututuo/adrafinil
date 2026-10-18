@@ -76,6 +76,7 @@ struct MenuPopover: View {
         }
         .task {
             status.refreshAgentHealth()
+            SilentUpdates.shared.checkIfStale()
             maxHoldHours = AdrafinilSettings.load().manualHoldMaxHours
             UsageCounting.noteUse()
         }

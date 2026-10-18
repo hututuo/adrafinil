@@ -1,4 +1,5 @@
 import AdrafinilShared
+import AppKit
 import Foundation
 import Observation
 import os
@@ -19,10 +20,13 @@ import TiptoeGitHub
 /// The gate is a veto, not a preference: Tiptoe's own patience relaxes over days, this never does.
 ///
 /// One check loop serves both modes (Tiptoe ≥ 1.1's `installsAutomatically`): with
-/// `autoInstallUpdates` off the daily check still runs and still answers ``availableVersion`` —
+/// `autoInstallUpdates` off the check still runs and still answers ``availableVersion`` —
 /// the Settings row and menu-bar card draw from it — but nothing downloads or installs except
-/// through ``updateNow()``. This is the single daily request to GitHub; there is no separate
-/// notify-only poller.
+/// through ``updateNow()``. There is no separate notify-only poller.
+///
+/// The loop ticks every ``checkInterval``; between ticks, opening the popover or waking the Mac
+/// repeats the check once it is ``staleAfter`` old, and the Settings button makes one on demand.
+/// Each is a single GitHub metadata request, which GitHub itself caches for a minute.
 @MainActor
 @Observable
 final class SilentUpdates {
@@ -31,9 +35,17 @@ final class SilentUpdates {
     static let owner = "kageroumado"
     static let repo = "adrafinil"
 
-    /// This app has never wanted to poll GitHub more often than once a day — finding an update
-    /// sooner would not install it sooner anyway.
-    private static let checkInterval: TimeInterval = 60 * 60 * 24
+    /// The Settings row and the menu-bar card announce a release within hours of it shipping, so
+    /// a fix reaches people the same day; the request is one cached metadata call.
+    private static let checkInterval: TimeInterval = 4 * 60 * 60
+
+    /// A check older than this is repeated when the popover opens or the Mac wakes: the loop's
+    /// tick may have landed while the Mac slept, or at a launch before the network was up.
+    private static let staleAfter: TimeInterval = 60 * 60
+
+    /// The network comes back a beat after the Mac does; asking at the wake notification itself
+    /// fails and leaves the next try to the loop.
+    private static let wakeGrace: Duration = .seconds(20)
 
     /// Progress of a user-initiated Update Now, for the Settings row. A successful install
     /// replaces the process, so the only terminal state this side of the swap is `.failed`.
@@ -73,6 +85,15 @@ final class SilentUpdates {
     @ObservationIgnored private let log = Logger(
         subsystem: AdrafinilConstants.appBundleID, category: "SilentUpdates",
     )
+    @ObservationIgnored private var wakeObserver: (any NSObjectProtocol)?
+
+    /// When this object last asked GitHub itself. The loop's own ticks are not visible here, so
+    /// this is a floor on freshness: a stale check may repeat a tick made minutes ago, at the
+    /// cost of one cached metadata request.
+    @ObservationIgnored private var lastCheckedAt: Date?
+
+    /// The one metadata request in flight, shared by whoever asks while it runs.
+    @ObservationIgnored private var checkInFlight: Task<Void, Never>?
 
     private init() {
         // Notify-only until `start()` applies the user's real setting — which never happens in
@@ -101,6 +122,13 @@ final class SilentUpdates {
         // out from under Xcode. The debug control panel exercises the UI states directly.
         #if !DEBUG
             github.installsAutomatically(autoInstall).start()
+            wakeObserver = NSWorkspace.shared.notificationCenter.addObserver(
+                forName: NSWorkspace.didWakeNotification, object: nil, queue: .main,
+            ) { [weak self] _ in
+                MainActor.assumeIsolated {
+                    self?.checkAfterWake()
+                }
+            }
         #endif
     }
 
@@ -129,13 +157,46 @@ final class SilentUpdates {
         guard !isChecking else { return }
         isChecking = true
         checkedUpToDate = false
-        await github.checkNow()
+        await check()
         isChecking = false
-        refresh()
         // "Nothing newer" and "couldn't reach GitHub" both leave availableVersion nil, so this
-        // reassurance can be a beat optimistic offline. The daily loop self-corrects, and
+        // reassurance can be a beat optimistic offline. The loop self-corrects, and
         // onChecksFailing reports a real outage.
         checkedUpToDate = availableVersion == nil && pendingVersion == nil
+    }
+
+    /// The check the popover's appearance and the Mac's waking make, when the last one is old
+    /// enough to be worth repeating. Quiet: nothing in the UI shows its progress.
+    func checkIfStale() {
+        // A development build does not poll GitHub on its own; the Settings button's check is
+        // the one request it makes, and only when asked.
+        #if !DEBUG
+            if let lastCheckedAt, Date.now.timeIntervalSince(lastCheckedAt) < Self.staleAfter { return }
+            Task(name: "Check for updates (stale)") { await check() }
+        #endif
+    }
+
+    private func checkAfterWake() {
+        Task(name: "Check for updates after wake") { [weak self] in
+            try? await Task.sleep(for: Self.wakeGrace)
+            self?.checkIfStale()
+        }
+    }
+
+    /// One metadata request; a second caller while it runs waits for the same answer.
+    private func check() async {
+        if let checkInFlight {
+            await checkInFlight.value
+            return
+        }
+        let task = Task(name: "Check for updates") { [github] in
+            await github.checkNow()
+        }
+        checkInFlight = task
+        await task.value
+        checkInFlight = nil
+        lastCheckedAt = .now
+        refresh()
     }
 
     // MARK: - Update Now
@@ -151,7 +212,14 @@ final class SilentUpdates {
         #else
             manualPhase = .working
 
-            // Installs the DMG the automatic path already holds, or downloads and verifies one
+            // Ask GitHub first. With automatic installs on, the DMG the loop downloaded may be
+            // days old and one release behind, and `github.updateNow()` installs what it holds
+            // as it stands; this check replaces a stale download with the newest release. With
+            // installs off it only refreshes `availableVersion`, and `updateNow()` downloads
+            // the newest itself.
+            await check()
+
+            // Installs the DMG the automatic path holds, or downloads and verifies one
             // now — `false` means there was nothing newer or the download couldn't be prepared.
             guard await github.updateNow() else {
                 // `availableVersion` is set only by a check that reached GitHub and found an
